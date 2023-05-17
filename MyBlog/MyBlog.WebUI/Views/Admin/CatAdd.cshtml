@@ -1,0 +1,28 @@
+﻿@using MyBlogWebUI.Models;
+@model CategoryModel
+@{
+    ViewData["Title"] = "Kategori Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Kategori Ekle</h4>
+            <form asp-controller="Admin" asp-action="CatAdd" method="post" class="forms-sample">
+                <div class="form-group">
+                    <label>Kategori Adı</label>
+                    <input asp-for=CategoryName type="text" class="form-control" placeholder="Kategori Adı">
+                </div>
+                <div class="form-group">
+                    <label>Kategori Url</label>
+                    <input asp-for=Url type="text" class="form-control" placeholder="Kategori Url">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-gradient-warning mr-2">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

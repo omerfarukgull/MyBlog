@@ -1,0 +1,13 @@
+﻿@using MyBlog.Entities.Concrete;
+@model IEnumerable<Blog>
+
+@foreach (var item in Model)
+{
+
+    <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" class="footer_img_post_6">
+        <img src="~/img/@item.ImgUrl" alt="img" />
+    </a>
+
+}
+
+

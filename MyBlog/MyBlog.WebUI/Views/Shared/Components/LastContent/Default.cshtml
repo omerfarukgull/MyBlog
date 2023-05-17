@@ -1,0 +1,21 @@
+﻿@using MyBlog.Entities.Concrete;
+@model IEnumerable<Blog>
+
+@foreach (var item in Model)
+{
+
+    <div class="row pb-3">
+
+        <div class="col-5 align-self-center">
+            <img src="~/img/@item.ImgUrl" width="420px" height="270px" alt="img" class="fh5co_most_trading" />
+        </div>
+        <div class="col-7 paddding">
+            <div class="most_fh5co_treding_font"> @item.Title</div>
+            <div class="most_fh5co_treding_font_123">@item.CreateDate</div>
+        </div>
+
+    </div>
+
+}
+
+

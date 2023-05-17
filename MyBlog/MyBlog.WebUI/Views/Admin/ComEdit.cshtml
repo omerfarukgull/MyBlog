@@ -1,0 +1,32 @@
+﻿@using MyBlog.Entities.Concrete;
+@model Comment
+@{
+    ViewData["Title"] = "Yorum Düzenler ";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yorum Edit</h4>
+            <form asp-controller="Admin" asp-action="ComEdit" method="post" class="forms-sample">
+                <input asp-for=Id type="hidden" value="@Model.Id" />
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Kullanıcı Adı</label>
+                        <input asp-for=UserName type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group row">
+                    <label  class="col-sm-3 col-form-label">Email</label>
+                        <input asp-for=Mail type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group row">
+                    <label  class="col-sm-3 col-form-label">Yorum</label>
+                        <textarea asp-for=Yorum type="text" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Kaydet</button>
+            </form>
+        </div>
+    </div>
+</div>
+

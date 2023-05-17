@@ -1,0 +1,165 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyBlog.WebUI
+build_property.RootNamespace = MyBlog.WebUI
+build_property.ProjectDir = C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.WebUI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.WebUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/BlogAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmxvZ0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/BlogEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmxvZ0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/BlogList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmxvZ0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/CatAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0QWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/CatEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/CatList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/ComEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/ComList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/MesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Admin/MesSend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVzU2VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Home/BlogDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Home/BlogList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/AdminBlogList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5CbG9nTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/AdminNavbar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5OYXZiYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/BlogCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0NvdW50XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/BlogIsapprovCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0lzYXBwcm92Q291bnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/BlogIsapprovedCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0lzYXBwcm92ZWRDb3VudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/BlogList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0xpc3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/CategoryCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlDb3VudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/CommentCountList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudENvdW50TGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/CommentList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/FooterTag/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyVGFnXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/LastContentImg/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdENvbnRlbnRJbWdcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/LastContent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdENvbnRlbnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/MessageCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVzc2FnZUNvdW50XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/Tags/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/Components/TrendList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHJlbmRMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/_footerNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXJOYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/_MyBlogLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NeUJsb2dMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/Shared/_navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/OneDrive/Masaüstü/asp.net/MyBlog/MyBlog.WebUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

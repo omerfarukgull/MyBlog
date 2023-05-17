@@ -1,0 +1,60 @@
+﻿@using MyBlog.Entities.Concrete;
+
+@model List<Comment>
+@{
+    ViewData["Title"] = "Yorum Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yorumlar</h4>
+
+            @if (Model.Count==0)
+            {
+                 <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning">
+                                Yorum Bulunamadı 
+                            </div>
+                        </div>
+                    </div>
+            }
+            else
+            {
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>User Name</th>
+                        <th>Mail</th>
+                        <th>Yorum</th>
+
+                        <th>Düzenle</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var com in Model)
+                    {
+                        <tr>
+                            <td>@com.Id</td>
+                            <td>@com.UserName</td>
+                            <td>@com.Mail</td>
+                            <td>@com.Yorum</td>
+                            <td><a asp-controller="Admin" asp-action="ComEdit" asp-route-id="@com.Id" class="btn btn-success btn-fw">Düzenle</a></td>
+                            <form asp-controller="Admin" asp-action="ComDel" method="post">
+                                <input type="hidden" name="Id" value="@com.Id">
+                            <td><button type="submit" class="btn btn-danger btn-fw">Sil</button></td>
+                            </form>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            }
+        </div>
+    </div>
+</div>
+

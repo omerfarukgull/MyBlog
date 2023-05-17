@@ -1,0 +1,59 @@
+﻿@using MyBlog.Entities.Concrete;
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model IPagedList<Blog>
+@{
+    ViewData["Title"] = "Blog Liste";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Blog Yazıları</h4>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Resim</th>
+                        <th>Başlık</th>
+                        <th>Status</th>
+                        <th>Yayınlanma Tarihi</th>
+                        <th>Düzenle</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var blog in Model)
+                    {
+                        <tr>
+                            <td>@blog.Id</td>
+                            <td><img src="~/img/@blog.ImgUrl" style="width:100px;height:100px;"></td>
+                            <td width="50px">@blog.Title</td>
+                            <td>
+                                @if (blog.IsApproved == true)
+                                {
+                                    <label class="badge badge-gradient-success">Yayında</label>
+                                }
+                                else if (blog.IsApproved == false)
+                                {
+                                    <label class="badge badge-gradient-danger">Yayında değil</label>
+                                }
+
+                            </td>
+                            <td>@blog.CreateDate.ToString("dd MM yyyy")</td>
+                            <td><a asp-controller="Admin" asp-action="BlogEdit" asp-route-id="@blog.Id" class="btn btn-success btn-fw">Düzenle</a></td>
+                            <td><a class="btn btn-danger btn-fw">Sil</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <br />
+            @Html.PagedListPager((IPagedList)Model,page=>Url.Action("BlogList",new{page,@class="btn btn-dark btn-fw"}))
+            <br />
+            <a asp-controller="Admin" asp-action="BlogAdd" class="btn btn-warning btn-fw">Kategori Ekle</a>
+        </div>
+    </div>
+</div>
+

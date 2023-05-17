@@ -1,0 +1,124 @@
+﻿@using MyBlog.Entities.Concrete;
+@using MyBlogWebUI.Models;
+@model BlogModel
+@{
+    ViewData["Title"] = "Blog Düzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{
+    DateTime bugun = DateTime.Today;
+}
+<form asp-controller="Admin" asp-action="BlogEdit" method="post" class="forms-sample form-check" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-8 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Blog Düzenle</h4>
+                    <div class="form-group">
+                        <label>Blog Başlık</label>
+                        <input name="Id" type="text" readonly value="@Model.Id" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Blog Başlık</label>
+                        <input asp-for=Title type="text" class="form-control" placeholder="Blog Başlık">
+                    </div>
+                    <div class="form-group">
+                        <label>Blog Url</label>
+                        <input asp-for=Url type="text" class="form-control" placeholder="Kategori Url">
+                    </div>
+                    <div class="form-group">
+                        <label>Kısa Açıklama</label>
+                        <input asp-for=Description type="text" class="form-control" placeholder="Kısa Açıklama">
+                    </div>
+                    <div class="form-group">
+                        <label>Açıklama</label>
+                        <textarea asp-for=Content id="editor" class="form-control" placeholder="Açıklama" style="height:200"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Resim Url</label>
+                        <input type="hidden" asp-for="ImgUrl" />
+                        <img src="~/img/@Model.ImgUrl" width="100" />
+                        <input type="file" name="file" />
+                    </div>
+                    <div class="form-group">
+                        <label>Puan</label>
+                        <input asp-for=Puan type="text" class="form-control" placeholder="Puan">
+                    </div>
+                    <div class="form-group">
+                        <label>Yayınlama Tarihi</label>
+                        <input asp-for=CreateDate value="@bugun" type="text" class="form-control" placeholder="Puan">
+                    </div>
+                    <div class="form-group">
+                        <label>Yazar</label>
+                        @Html.DropDownListFor(x=>x.AuthorId,(List<SelectListItem>)ViewBag.au,new{@class="form-control"})
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-gradient-primary mr-2">Blog Kaydet</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-4 grid-margin stretch-card">
+
+            @for (int i = 0; i < Model.selectedCategories.Count; i++)
+            {
+                <input type="hidden" name="selectedCategories[@i].Id" value="@Model.selectedCategories[@i].Id">
+                <input type="hidden" name="selectedCategories[@i].CategoryName" value="@Model.selectedCategories[@i].CategoryName">
+            }
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Kategori</h4>
+                    @foreach (var item in (List<Category>)ViewBag.Categories)
+                    {
+                        <div class="form-group">
+                            <div class="form-check">
+                                <label class="form-check-label" for="category_@(item.Id)">
+                                    <input type="checkbox"
+                                       class="form-check-input"
+                                       name="categoryIds"
+                                       value="@item.Id"
+                                       id="category_@(item.Id)"
+                                       @(Model.selectedCategories.Any(i=>i.Id==item.Id)?"checked":"")>
+                                    @item.CategoryName
+                                </label>
+                            </div>
+                        </div>
+                    }
+                    <hr />
+                    <h4 class="card-title">Blog Durum</h4>
+                    <div class="form-group">
+                        <div class="form-check">
+                            @if (Model.Isapproved == true)
+                            {
+                                <label asp-for="Isapproved" class="form-check-label">
+                                    <input asp-for=Isapproved type="checkbox" checked class="form-check-input">Yayınla
+                                </label>
+                            }
+                            else
+                            {
+                                <label asp-for="Isapproved" class="form-check-label">
+                                    <input asp-for=Isapproved type="checkbox" class="form-check-input">Yayınla
+                                </label>
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+@section Scripts
+    {
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor');
+    </script>
+    }

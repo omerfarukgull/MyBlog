@@ -1,0 +1,10 @@
+﻿@using MyBlog.Entities.Concrete
+@model List<Category>
+
+@foreach (var tags in Model)
+{
+    <a asp-controller="Home"
+   asp-action="BlogList"
+   asp-route-category="@tags.Url"
+   class="fh5co_tagg @(ViewBag.SelectedCategory == tags.Url?"active":"")">@tags.CategoryName</a>
+}

@@ -1,0 +1,36 @@
+﻿
+<style>
+    .navbar-nav .nav-link {
+        color: #222 !important;
+        padding-top: 12px !important;
+        padding-bottom: 15px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin: 0 20px !important;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        transition: all .5s ease;
+        position: relative !important;
+    }
+</style>
+
+<nav class="navbar navbar-toggleable-md">
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Ansayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" asp-controller="Home" asp-action="BlogList">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" asp-controller="Home" asp-action="About">Hakkımda <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" asp-controller="Home" asp-action="Contact">İletişim <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

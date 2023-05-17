@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container-fluid pt-3">
+    <div class="container animate-box" data-animate-effect="fadeIn">
+        <div>
+            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trend Yazılar</div>
+        </div>
+        <div class="owl-carousel owl-theme js" id="slider1">
+            @await Component.InvokeAsync("TrendList")
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid pb-4 pt-4 paddding">
+    <div class="container paddding">
+        <div class="row mx-0">
+            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Blog Yazıları</div>
+                </div>
+
+                @await Component.InvokeAsync("BlogList")
+
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Kategoriler</div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="fh5co_tags_all">
+                    @await Component.InvokeAsync("Tags")
+
+                </div>
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-3 py-2 mb-4">Son Yazılar</div>
+                </div>
+                @await Component.InvokeAsync("LastContent")
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,41 @@
+﻿@using MyBlog.Entities.Concrete;
+@model List<Category>
+@{
+    ViewData["Title"] = "Kategori Liste";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Kategoriler</h4>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Kategori Name</th>
+                        <th>Url</th>
+                        <th>Düzenle</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cat in Model)
+                    {
+                        <tr>
+                            <td>@cat.Id</td>
+                            <td>@cat.CategoryName</td>
+                            <td>@cat.Url</td>
+                            <td><a asp-controller="Admin" asp-action="CatEdit" asp-route-id="@cat.Id" class="btn btn-success btn-fw">Düzenle</a></td>
+                            <td><a class="btn btn-danger btn-fw">Sil</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <br />
+            <a asp-controller="Admin" asp-action="CatAdd" class="btn btn-warning btn-fw">Kategori Ekle</a>
+        </div>
+    </div>
+</div>

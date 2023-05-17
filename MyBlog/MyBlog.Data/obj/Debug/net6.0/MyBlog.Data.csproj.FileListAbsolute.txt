@@ -1,0 +1,17 @@
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.csproj.AssemblyReference.cache
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.AssemblyInfoInputs.cache
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.AssemblyInfo.cs
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.csproj.CoreCompileInputs.cache
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\bin\Debug\net6.0\MyBlog.Data.deps.json
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\bin\Debug\net6.0\MyBlog.Data.runtimeconfig.json
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\bin\Debug\net6.0\MyBlog.Data.dll
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\bin\Debug\net6.0\MyBlog.Data.pdb
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\bin\Debug\net6.0\MyBlog.Entities.dll
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\bin\Debug\net6.0\MyBlog.Entities.pdb
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.csproj.CopyComplete
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.dll
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\refint\MyBlog.Data.dll
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.pdb
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\MyBlog.Data.genruntimeconfig.cache
+C:\Users\omerf\OneDrive\Masaüstü\asp.net\MyBlog\MyBlog.Data\obj\Debug\net6.0\ref\MyBlog.Data.dll

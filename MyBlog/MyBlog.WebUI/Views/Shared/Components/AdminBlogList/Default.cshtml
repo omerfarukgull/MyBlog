@@ -1,0 +1,49 @@
+﻿@using MyBlog.Entities.Concrete;
+@model List<Blog>
+
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Son 10 Blog</h4>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th> Resim </th>
+                        <th> Baslık </th>
+                        <th> Yazar </th>
+                        <th>Status</th>
+                        <th> Yayınlama Tarihi </th>
+                        <th> Detaylar </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderByDescending(b => b.Id).Take(10))
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/img/@item.ImgUrl" alt="" />
+                            </td>
+                            <td> @item.Title </td>
+                            <td> Ömer Faruk Gül </td>
+                            <td>
+                                @if (item.IsApproved==true)
+                                {
+                                    <label class="badge badge-gradient-success">Yayında</label>
+                                }
+                                else if(item.IsApproved==false)
+                                {
+                                    <label class="badge badge-gradient-danger">Yayında değil</label>
+                                }
+
+                            </td>
+                            <td> @item.CreateDate.ToString("MMM d, yyyyy") </td>
+                            <td> <a asp-controller="Admin" asp-action="BlogEdit" asp-route-id="@item.Id" class="btn btn-gradient-dark btn-fw">Detay</a> </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

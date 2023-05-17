@@ -1,0 +1,67 @@
+﻿@using MyBlogWebUI.Models;
+@model MailRequest
+@{
+    ViewData["Title"] = "Mesaj Gönder";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Mesaj Detay</h4>
+                <form class="forms-sample">
+                    <input type="hidden" name="Id" value="@Model.Id">
+                    <div class="form-group">
+                        <label>İsim</label>
+                        <input asp-for=Name value="@Model.UserName" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input asp-for=Email value="@Model.Email" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Konu</label>
+                        <input asp-for=Title value="@Model.Title" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesaj</label>
+                        <textarea asp-for=Message value="@Model.Message" type="text" class="form-control" readonly></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Mesaj Gönder</h4>
+                <form asp-controller="Admin" asp-action="MesSend" method="post" class="forms-sample">
+                    <input type="hidden" name="Id" value="@Model.Id">
+                    <div class="form-group">
+                        <label>Alıcı Mail</label>
+                        <input asp-for=ReceiverEmail value="@Model.ReceiverEmail" type="text" readonly class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Konu</label>
+                        <input asp-for=Subject type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Mesaj</label>
+                        <textarea asp-for=Body id="editor" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Mail Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts
+    {
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor');
+    </script>
+    }
+
+

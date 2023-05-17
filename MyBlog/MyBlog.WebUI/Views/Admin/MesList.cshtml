@@ -1,0 +1,65 @@
+﻿@using MyBlog.Entities.Concrete;
+@model List<Messages>
+@{
+    ViewData["Title"] = "Mesaj Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesajlar</h4>
+             @if (Model.Count==0)
+            {
+                 <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning">
+                                Yorum Bulunamadı 
+                            </div>
+                        </div>
+                    </div>
+            }
+            else
+            {
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>User Name</th>
+                        <th>E-Mail</th>
+                        <th>Konu</th>
+                        <th>Mesaj</th>
+                        <th>Mesaj Durum</th>
+                        <th>Detay/Cevap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var mes in Model)
+                    {
+                        <tr>
+                            <td>@mes.Id</td>
+                            <td>@mes.Name</td>
+                            <td>@mes.Email</td>
+                            <td>@mes.Title</td>
+                            <td>@mes.Message</td>
+                            <td>
+                                @if (mes.MessageStatus == true)
+                                {
+                                    <i class="mdi mdi-checkbox-marked-outline mr-2" aria-hidden="true"></i>
+                                }
+                                else
+                                {
+                                    <i class="mdi mdi-checkbox-blank-outline mr-2" aria-hidden="true"></i>
+                                }
+                            </td>
+                            <td><a asp-controller="Admin" asp-action="MesSend" asp-route-id="@mes.Id" class="btn btn-success btn-fw">Cevapla</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            }
+        </div>
+    </div>
+</div>
+
+

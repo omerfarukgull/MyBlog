@@ -1,0 +1,87 @@
+﻿@using MyBlogWebUI.Models;
+@model CategoryModel
+@{
+    ViewData["Title"] = "Kategori Düzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Kategori Düzenle</h4>
+                <form asp-controller="Admin" asp-action="CatEdit" method="post" class="forms-sample">
+                    <input type="hidden" name="Id" value="@Model.Id">
+                    <div class="form-group">
+                        <label>Kategori Adı</label>
+                        <input asp-for=CategoryName type="text" class="form-control" placeholder="Kategori Adı">
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori Url</label>
+                        <input asp-for=Url type="text" class="form-control" placeholder="Kategori Url">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-gradient-primary mr-2">Kaydet</button>
+                    </div>
+
+                    <div id="blogs">
+
+                        @for (int i = 0; i < Model.Blogs.Count; i++)
+                        {
+                            <input type="hidden" name="Products[@i].ProductId" value="@Model.Blogs[@i].Id">
+                            <input type="hidden" name="Products[@i].ImageUrl" value="@Model.Blogs[@i].Title">
+                        }
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Blog Yazıları</h4>
+                @if (Model.Blogs.Count > 0)
+                {
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Başlık</th>
+                                <th>Düzenle</th>
+                                <th>Sil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var blog in Model.Blogs)
+                            {
+                                <tr>
+                                    <td>@blog.Id</td>
+                                    <td width="50px">@blog.Title</td>
+                                    <td><a asp-controller="Admin" asp-action="BlogEdit" asp-route-id="@blog.Id" class="btn btn-success btn-fw">Düzenle</a></td>
+                                    <td>
+                                        <form asp-controller="Admin" asp-action="DeleteFromCategory" method="post" style="display: inline;">
+                                            <input type="hidden" name="blogId" value="@blog.Id">
+                                            <input type="hidden" name="categoryId" value="@Model.Id">
+                                            <button type="submit" class="btn btn-danger btn-fw">Sil</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div class="alert alert-warning text-dark">
+                        <h3>Kategoriye Ait Blog Yok</h3>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
